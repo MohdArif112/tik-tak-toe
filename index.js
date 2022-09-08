@@ -13,7 +13,7 @@ function winpop(){
 
   winDiv.style.display="block";
   maingamediv.style.display="none";
-  if(xWins == false){
+  if(xWins == true){
 
    
     //console.log(player1.value);
