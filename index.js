@@ -2,10 +2,22 @@ let maingamediv = document.getElementsByClassName("main-game")[0];
 let gamebtn = document.getElementById("playGame");
 let winDiv= document.getElementsByClassName('popup')[0];
 let popupHeading = document.getElementById("popupHeading");
+let popupConfirnBtn = document.getElementById("popupBtnConfirm");
+let popupRejectBtn = document.getElementById("popupBtnReject");
 let count = 0;
 let xWins = false;
 let player1 ;
 let player2 ;
+
+
+//game continue function
+function reloadGame(){
+  //maingamediv.style.display="block";
+  // winDiv.style.display="none";
+  // generateGameGrid();
+  location.reload();
+}
+
 
 // WInning window pop up
 
@@ -17,10 +29,11 @@ function winpop(){
 
    
     //console.log(player1.value);
-     popupHeading.innerText= player1.value +" "+' WINS ';
+     popupHeading.innerText="Congratulations" + "  " +player1.value;
+    //  popupHeading2.innerText= "Dou You Want To continue";
   }
   else{
-    popupHeading.innerText= player2.value+" " +' WINS ';
+    popupHeading.innerText="Congratulations" +"  " + player2.value;
   }
 }
 
