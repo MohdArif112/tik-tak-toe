@@ -51,7 +51,7 @@ function winGame(){
     [1,7,4],
     [2,5,8],
     [0,4,8],
-    [2,4,8],
+    [2,4,6],
   ]
 
   wins.forEach(element => {
