@@ -110,7 +110,7 @@ function generateGameGrid() {
   player1.style.width = "250px";
   player1.style.margin = "10px";
   player1.style.padding = "10px";
-  player1.style.borderRadius = "120px";
+  player1.style.borderRadius = "50px";
   player1.style.fontSize = "20px";
   player1.setAttribute("placeholder", "First Player");
 
@@ -120,7 +120,7 @@ function generateGameGrid() {
   player2.style.width = "250px";
   player2.style.margin = "10px";
   player2.style.padding = "10px";
-  player2.style.borderRadius = "120px";
+  player2.style.borderRadius = "50px";
   player2.style.fontSize = "20px";
   player2.setAttribute("placeholder", "Second Player");
 
@@ -193,14 +193,14 @@ function generateGameGrid() {
               
               namePlayer1.innerText = player1.value + "  =====>   " + "X";
               namePlayer1.style.marginBottom = "20px";
-              namePlayer1.style.color = "white";
+              namePlayer1.style.color = "black";
               console.log("inside If");
             } else if(count % 2 == 1 && count <9){
               // namePlayer2.style.display="initial";
               namePlayer1.style.visibility="visible";
               namePlayer1.innerText = player2.value + "  =====>   " + "0";
               namePlayer1.style.marginBottom = "20px";
-              namePlayer1.style.color = "white";
+              namePlayer1.style.color = "black";
               console.log("inside else");
             }
           });

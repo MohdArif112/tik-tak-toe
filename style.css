@@ -4,29 +4,22 @@
 }
  body {
     margin: 0;
-    background-color: #222629;
+    background-color: whitesmoke;
 }
 nav ul{
     list-style-type: none;
 }
-#nav-mid {
-    display: flex;
-    justify-content: center;
-    
-    
-}
-li {
 
-    margin: 20px;
-    cursor: pointer;
-}
+.main-heading{
+    font-size: 70px;
+ }
 nav {
 
-    height: 70px;
-    background-color: #61892F;
+    height: 85px;
+    background-color: skyblue;
     
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .nav-element {
 
