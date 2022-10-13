@@ -60,7 +60,11 @@ function winGame(){
       if(colEle[element[1]].innerText==='X'){
         setTimeout(() => {
           xWins= true;
-          winpop();
+
+          setTimeout(() => {
+            
+            winpop();
+          }, 1000);
           
         },500);
 
