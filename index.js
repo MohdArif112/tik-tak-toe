@@ -96,6 +96,7 @@ function winGame(){
 
 
 function refresh () {
+  
   count = 0;
   console.log(count);
   let eachcol = document.getElementsByClassName("gridColumn");
@@ -103,6 +104,13 @@ function refresh () {
     element.innerText = "";
   });
 }
+
+// function refresh2 () {
+//   winDiv.style.display="none"
+//   generateGameGrid()
+//   count = 0;
+//   refresh();
+// }
 
 
 // function settime(){
@@ -280,13 +288,8 @@ function generateGameGrid() {
       let resetBtn = document.createElement("button");
       // resetBtn.setAttribute('type','reset');
       resetBtn.innerText = "Reset";
-      resetBtn.style.marginTop = "30px";
-      resetBtn.style.width = "120px";
-      resetBtn.style.padding = "10px";
-      resetBtn.style.borderRadius = "50px";
-      resetBtn.style.fontSize = "25px";
-      resetBtn.style.cursor = "pointer";
-      resetBtn.style.backgroundColor = "skyblue";
+      resetBtn.classList.add("resetBtn");
+
       maingamediv.appendChild(resetBtn);
 
       //Adding event listener to reset the game

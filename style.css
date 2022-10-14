@@ -46,6 +46,8 @@ nav {
     font-size: 25px;
     background-color: #61892F;
     border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 15px rgb(99, 92, 92),-5px -5px 15px rgb(99, 92, 92);
 }
 #playGame:hover {
     background-color: skyblue;
@@ -61,6 +63,8 @@ nav {
     border-radius: 25px;
     font-size:20px ;
     border: none;
+    box-shadow:inset 5px 5px 15px rgb(99, 92, 92),
+            inset -5px -5px 15px rgb(99, 92, 92);
 }
 .playerNameBtn{
     
@@ -72,6 +76,19 @@ nav {
     background-color: #61892F;
     align-self: center;
     font-size: 25px;
+    box-shadow: 5px 5px 15px rgb(99, 92, 92),-5px -5px 15px rgb(99, 92, 92);
+}
+
+.resetBtn{
+    margin-top: 30px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: skyblue;
+    box-shadow: 5px 5px 15px rgb(99, 92, 92),-5px -5px 15px rgb(99, 92, 92);
+    border: none;
 }
 
 .popup {
@@ -114,6 +131,7 @@ nav {
     width: 150px;
     margin-right: 10px;
     cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(99, 92, 92),-5px -5px 15px rgb(99, 92, 92);
 }
 .popupBtn:hover {
     background-color: rgb(148, 41, 148);
