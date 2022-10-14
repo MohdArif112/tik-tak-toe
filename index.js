@@ -105,7 +105,12 @@ function refresh () {
 }
 
 
-
+// function settime(){
+ 
+//   correctAudio.currentTime=1;
+//   correctAudio.play();
+  
+// }
 
 
 
@@ -226,19 +231,24 @@ function generateGameGrid() {
 
               
               if (count % 2 == 0) {
+              
                 correctAudio.play();
+                // settime();
                 column.innerText = "X";
                 console.log("hello");
                 count++;
                 winGame();
               } else {
+              
                 correctAudio.play();
+                // settime();
                 column.innerText = "0";
                 count++;
                 winGame();
               }
             }
             else{
+              
               IncorrectAudio.play();
             }
           });
