@@ -26,23 +26,6 @@ nav {
     align-self: center;
 }
 
-#search-box {
-
-    width: 180px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 12px;
-    
-    background-color: antiquewhite;
-}
-#search-btn {
-
-    border: 1px solid black;
-    border-radius: 12px;
-    padding: 7px;
-    cursor: pointer;
-    background-color: antiquewhite;
-}
 
 .main-game {
 
@@ -68,21 +51,38 @@ nav {
     background-color: skyblue;
 }
 
-.popup {
+
+.playerInput{
+
+    height: 40px;
+    width: 240px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size:20px ;
+}
+.playerNameBtn{
+    
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 50px;
     background-color: #61892F;
+    align-self: center;
+    font-size: 25px;
+}
+
+.popup {
+    /* background-color: #61892F; */
+    
+    font-size: 55px;
     width: 300px;
     height: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* margin: 0 auto; */
-    border: 1px solid white;
-    border-radius: 50px;
+    /* border: 1px solid white; */
+    /* border-radius: 50px; */
     transform: translate(-50%,-50%); 
     text-align: center;
     padding-top: 70px;
@@ -92,14 +92,15 @@ nav {
 #popupHeading {
     
     margin-bottom: 30px;
-    color: aliceblue;
+    color: black;
 }
-
+/* 
 #popupHeading2 {
     
     margin-bottom: 30px;
     color: aliceblue;
-}
+} */
+
 
 .popupBtn {
 
