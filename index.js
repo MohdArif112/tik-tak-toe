@@ -166,14 +166,16 @@ function generateGameGrid() {
   maingamediv.appendChild(playerDiv);
 
   playerNameBtn.addEventListener("click", function grid() {
-    if (player1.value.length == 0 || player1.value.length == 0) {
+    if (player1.value.length == 0 || player2.value.length == 0) {
       alert("Players Name can't be Empty");
     } else {
       playerNameBtn.style.display = "none";
 
       player1.style.display = "none";
       player2.style.display = "none";
+      
 
+      // loop for making row
       for (let i = 0; i < 3; i++) {
         let row = document.createElement("div");
         row.style.display = "flex";
@@ -182,6 +184,7 @@ function generateGameGrid() {
         row.style.width = "300px";
         row.style.border = "1px solid black";
 
+        //loop for making column
         for (let j = 0; j < 3; j++) {
           let column = document.createElement("div");
           column.style.backgroundColor = "white";
